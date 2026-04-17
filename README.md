@@ -1,6 +1,6 @@
-# ⚡ 张超专属待办事项
+# ⚡ 模仿Microsoft To Do开发的待办事项
 
-> 一款专为张超设计的跨平台待办事项管理工具，基于 Electron + React + Tailwind CSS 构建，配备深色 Z 字专属图标。
+> 一款专门借鉴Microsoft To Do打造的跨平台待办事项管理工具，基于 Electron + React + Tailwind CSS 构建，配备深色 Z 字专属图标。
 
 ![Platform](https://img.shields.io/badge/Platform-Windows-blue?style=flat-square&logo=windows)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
@@ -115,8 +115,8 @@ npm run build
 
 ## 👤 作者
 
-**张超（lordcvader2）**  
-📧 739250931@qq.com  
+**（lordcvader2）**  
+📧   
 🌐 <https://github.com/lordcvader2>
 
 ---
