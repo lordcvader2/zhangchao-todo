@@ -28,3 +28,7 @@ __pycache__/
 
 # electron-builder cache
 builder-debug.yml
+
+# Temp
+commit_msg*.txt
+fix_icon.py
