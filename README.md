@@ -28,7 +28,7 @@
 │  ⚡ 张超专属待办事项                    [🌙] [搜索...]│
 ├──────────┬──────────────────────────────────────────┤
 │          │                                          │
-│ 📌 全部   │   🟢 完成皮神 Todo 应用开发             │
+│ 📌 全部   │   🟢 完成Todo 应用开发             │
 │ ✅ 已完成 │   🟡 优化深色 Z 字图标                   │
 │ 📝 待办   │   🔴 修复打包签名问题                   │
 │          │                                          │
@@ -76,7 +76,7 @@ npm run dev
 npm run build
 ```
 
-构建产物位于 `dist2/win-unpacked/皮神Todo.exe`（绿色版，可直接分发）
+构建产物位于 `dist2/win-unpacked/ToDo.exe`（绿色版，可直接分发）
 
 ---
 
@@ -86,7 +86,7 @@ npm run build
 
 | 平台 | 文件 | 大小 |
 |------|------|------|
-| Windows | `皮神Todo.exe` | ~182 MB |
+| Windows | `ToDo.exe` | ~182 MB |
 
 > 下载地址：⚡ 即将发布 Release（见 [Releases](https://github.com/lordcvader2/zhangchao-todo/releases)）
 
