@@ -32,3 +32,7 @@ builder-debug.yml
 # Temp
 commit_msg*.txt
 fix_icon.py
+
+# Build outputs
+dist3/
+dist2/

@@ -1,7 +1,7 @@
 {
-  "name": "zhangchao-todo",
+  "name": "ztodo",
   "version": "1.1.0",
-  "description": "张超专属待办事项 - 微软 Todo 风格 Windows 桌面应用",
+  "description": "ZTodo - 微软 Todo 风格 Windows 桌面应用",
   "author": "张超",
   "main": "./out/main/index.js",
   "scripts": {
@@ -35,10 +35,10 @@
     "vite": "^6.2.0"
   },
   "build": {
-    "appId": "com.pika.todo",
-    "productName": "张超专属待办事项",
+    "appId": "com.ztask.app",
+    "productName": "ZTodo",
     "directories": {
-      "output": "dist2"
+      "output": "dist3"
     },
     "win": {
       "target": ["dir"]

@@ -1,5 +1,5 @@
 """
-生成张超专属待办事项 - 完整图标集（含 .ico .png）
+生成ZTodo - 完整图标集（含 .ico .png）
 """
 from PIL import Image, ImageDraw
 import os, struct, io

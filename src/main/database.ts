@@ -55,7 +55,7 @@ let store: Store<StoreSchema>
 
 export function initDatabase(): void {
   store = new Store<StoreSchema>({
-    name: 'zhangchao-todo-data',
+    name: 'ztask-data',
     defaults: {
       lists: [],
       tasks: [],

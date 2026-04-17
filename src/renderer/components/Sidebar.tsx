@@ -89,7 +89,7 @@ export default function Sidebar({
           style={{ color: textPrimary }}
         >
           <span className="text-2xl">⚡</span>
-          <span>张超专属待办</span>
+          <span>ZTodo</span>
         </h1>
       </div>
 
@@ -357,7 +357,7 @@ export default function Sidebar({
         </button>
 
         <p className="text-center text-[10px]" style={{ color: textMuted }}>
-          张超专属待办 v1.1 ⚡
+          ZTodo v1.1 ⚡
         </p>
       </div>
     </div>

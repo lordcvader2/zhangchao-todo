@@ -15,7 +15,7 @@ import {
 // 配置日志
 log.transports.file.level = 'info'
 log.transports.console.level = 'debug'
-log.info('[Main] 张超专属待办事项 启动')
+log.info('[Main] ZTodo 启动')
 
 let mainWindow: BrowserWindow | null = null
 let tray: Tray | null = null
@@ -36,7 +36,7 @@ function createWindow(): void {
     show: false,
     frame: true,
     backgroundColor: currentTheme === 'dark' ? '#1E1E1E' : '#F3F3F3',
-    title: '张超专属待办事项',
+    title: 'ZTodo',
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
       sandbox: false,
@@ -45,7 +45,7 @@ function createWindow(): void {
     }
   })
 
-  mainWindow.setTitle('张超专属待办事项')
+  mainWindow.setTitle('ZTodo')
 
   mainWindow.on('ready-to-show', () => {
     mainWindow?.show()
@@ -74,14 +74,14 @@ function createWindow(): void {
 }
 
 function createTray(): void {
-  const trayIcon = nativeImage.createFromDataURL('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAw0lEQVR4nM2XQQ7DIAwEwfITeia/6iP7Kzj3D61cqVJrmSoJ9rpzIznMZiECalG01h4lkDFG/RwTUm45CCm3XISW6xA1Qz5dAxnw7EW/Xdxl2/X+fw0QUma1WqMWoSWDTUHfKRc4WvxLLlCmXGB05e4N9AX5coBV+VIAD/npAF7yUwE85YcDeMsFjvzHXRrogXKB0ZXvbqAD5IK5HUechg5tx1vAl86gkkxNP5YPdVdDIu7XFGSEeDtJP0DKvwKgQmjHEzmYXPjuQKtEAAAAAElFTkSuQmCC')AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAdgAAAHYBTnsmCAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAABRSURBVDiNY2AYBfQAJvr///9/RkZGhv///zMyMjIyMjIyMqJmZGBgYGRkZGRkZGRkZGRgYGBgYGRgYGBgYGRgYGRgYGBgYGRgYGQAAKhYDfV0jMhMAAAAASUVORK5CYII=')
+    const trayIcon = nativeImage.createFromPath(join(__dirname, '../../resources/icon_B_darkZ.png'))
 
   tray = new Tray(trayIcon)
-  tray.setToolTip('张超专属待办事项 ⚡')
+  tray.setToolTip('ZTodo ⚡')
 
   const contextMenu = Menu.buildFromTemplate([
     {
-      label: '⚡ 张超专属待办事项',
+      label: '⚡ ZTodo',
       enabled: false
     },
     { type: 'separator' },
@@ -100,7 +100,7 @@ function createTray(): void {
         dialog.showMessageBox(mainWindow!, {
           type: 'info',
           title: '关于',
-          message: '张超专属待办事项',
+          message: 'ZTodo',
           detail: '版本: 1.0.0\n作者: 张超\n基于 Electron + React + TypeScript 构建'
         })
       }
@@ -216,7 +216,7 @@ function createMenu(): void {
             dialog.showMessageBox(mainWindow!, {
               type: 'info',
               title: '关于',
-              message: '张超专属待办事项',
+              message: 'ZTodo',
               detail: '版本: 1.1.0\n作者: 张超\n基于 Electron + React + TypeScript 构建\n\n快捷键:\nCtrl+N 新建任务\nCtrl+T 新建标签\nCtrl+F 搜索\nCtrl+Shift+D 切换主题\nCtrl+Shift+A 批量选中'
             })
           }
@@ -318,7 +318,7 @@ function createMenuTemplate(): Electron.MenuItemConstructorOptions[] {
             dialog.showMessageBox(mainWindow!, {
               type: 'info',
               title: '关于',
-              message: '张超专属待办事项',
+              message: 'ZTodo',
               detail: '版本: 1.1.0\n作者: 张超\n基于 Electron + React + TypeScript 构建\n\n快捷键:\nCtrl+N 新建任务\nCtrl+T 新建标签\nCtrl+F 搜索\nCtrl+Shift+D 切换主题'
             })
           }
@@ -445,7 +445,7 @@ function registerIpcHandlers(): void {
 
 app.whenReady().then(() => {
   // 设置 app 名称
-  app.name = '张超专属待办事项'
+  app.name = 'ZTodo'
 
   // 初始化数据库
   initDatabase()
