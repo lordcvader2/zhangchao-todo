@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "noEmit": false,
+    "outDir": "./out/renderer",
+    "jsx": "react-jsx"
+  },
+  "include": ["src/renderer/**/*"]
+}

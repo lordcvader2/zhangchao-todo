@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Microsoft YaHei', -apple-system, sans-serif;
+  background: #F3F3F3;
+  overflow: hidden;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C4C4C4;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A8A8A8;
+}
+
+/* 任务条目动画 */
+.task-item {
+  transition: all 0.15s ease;
+}
+
+.task-item:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+/* 复选框动画 */
+.checkbox-custom {
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.checkbox-custom.checked {
+  transform: scale(1.1);
+}
+
+/* 侧边栏选中态 */
+.nav-item {
+  transition: background 0.15s ease;
+}
+
+.nav-item:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.nav-item.active {
+  background: #E5F1FB !important;
+}
+
+/* 输入框聚焦 */
+input:focus, textarea:focus {
+  outline: none;
+}
+
+/* 面板淡入 */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.detail-panel {
+  animation: slideIn 0.2s ease;
+}
