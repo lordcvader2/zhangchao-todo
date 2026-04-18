@@ -88,7 +88,7 @@ npm run build
 |------|------|------|
 | Windows | `ZTodo.exe` | ~182 MB |
 
-> 下载地址：⚡ 即将发布 Release（见 [Releases](https://github.com/lordcvader2/ztodo/releases)）
+> 下载地址：见 [Releases](https://github.com/lordcvader2/zhangchao-todo/releases)
 
 ---
 
